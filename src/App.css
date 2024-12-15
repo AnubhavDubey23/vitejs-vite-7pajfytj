@@ -1,0 +1,31 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url('https://i.postimg.cc/mrxBZZ2G/freddy-castro-u3aj-SXh-ZM-U-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 0;
+}
+
+.dark #root::before {
+  background-color: rgba(17, 24, 39, 0.95);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
